@@ -11,7 +11,7 @@ public class JamesInterceptor implements HandlerInterceptor{
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		System.out.println("----preHandle-------------");
+		System.out.println("----preHandle-------------" + request.getRequestURI());
 		return true;
 	}
 	//在目标方法执行之后执行
